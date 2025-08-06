@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIRESTUnityWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47eb35a0af5151f7df258ded9ddb9b8f3169cd08")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIRESTUnityWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIRESTUnityWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -395,3 +395,4 @@ C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debu
 C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debug\net8.0\APIRESTUnityWeb.pdb
 C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debug\net8.0\APIRESTUnityWeb.genruntimeconfig.cache
 C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debug\net8.0\ref\APIRESTUnityWeb.dll
+C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debug\net8.0\APIRESTUnityWeb.sourcelink.json

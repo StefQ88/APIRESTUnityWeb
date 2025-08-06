@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace APIRESTUnityWeb.Models
-{
+{   
+    //Clase que representa a cada usuario de la app
     public class User
     {
         [Key]
@@ -11,7 +12,10 @@ namespace APIRESTUnityWeb.Models
         public string FirstName { get; set; } = string.Empty;
 
         [Required]
-        public string LastName { get; set; } = string.Empty;
+        public string SurName { get; set; } = string.Empty;
+
+        [Required]
+        public string UserName { get; set; } = string.Empty; 
 
         [Required]
         public string Email { get; set; } = string.Empty;

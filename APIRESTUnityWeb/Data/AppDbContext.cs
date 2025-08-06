@@ -27,7 +27,8 @@ namespace APIRESTUnityWeb.Data
 
                 entity.Property(e => e.UserId).HasColumnName("id_usuario");
                 entity.Property(e => e.FirstName).HasColumnName("nombre");
-                entity.Property(e => e.LastName).HasColumnName("apellido");
+                entity.Property(e => e.SurName).HasColumnName("apellido");
+                entity.Property(e => e.UserName).HasColumnName("nombre_usuario");
                 entity.Property(e => e.Email).HasColumnName("email");
                 entity.Property(e => e.Password).HasColumnName("contrasena");
                 entity.Property(e => e.RegistrationDate).HasColumnName("fecha_registro");
