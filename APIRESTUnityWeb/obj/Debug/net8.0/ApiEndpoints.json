@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "APIRESTUnityWeb.Controllers.PingController",
+    "Method": "get",
+    "RelativePath": "Ping",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
