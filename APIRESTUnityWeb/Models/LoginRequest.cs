@@ -4,7 +4,8 @@ using System.ComponentModel.DataAnnotations;
 namespace APIRESTUnityWeb.Models
 {
     public class LoginRequest
-    {
+    {   
+        // los campos que se espeeran en el json del logn
         [Required]
         public string UserOrEmail { get; set; }
 

@@ -36,12 +36,18 @@ namespace APIRESTUnityWeb.Controllers
                 return BadRequest(new { message = "El correo o nombre de usuario ya están registrados." });
             }
 
-            // Asignar la fecha actual y guardar el nuevo usuario
+            // Asignar la fecha actual en UTC antes de guardar el usuario
             user.RegistrationDate = DateTime.UtcNow;
+
             _context.Users.Add(user);
             _context.SaveChanges();
 
-            return Ok(new { message = "Usuario registrado correctamente." });
+            // Devolver mensaje y fecha convertida a hora local
+            return Ok(new
+            {
+                message = "Usuario registrado correctamente.",
+                registrationDateLocal = user.RegistrationDate.ToLocalTime()
+            });
         }
 
         // --------------------------------------

@@ -12,6 +12,8 @@ namespace APIRESTUnityWeb.Data
         }
 
         // DbSet que representa la tabla 'usuario' en la base de datos
+        // Define la tabla Users (que mapea a la tabla usuario de la base).
+        //Relaciona cada propiedad del modelo User con su columna real en la base (nombre, apellido, nombre_usuario, etc.).
         public DbSet<User> Users { get; set; }
 
         // Método opcional para configuraciones adicionales con Fluent API
@@ -36,3 +38,4 @@ namespace APIRESTUnityWeb.Data
         }
     }
 }
+
