@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[APIRESTUnityWeb.Models.User, APIRESTUnityWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[User, APIRESTUnityWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -29,13 +29,13 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "APIRESTUnityWeb.Models.User",
+        "Type": "User",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "APIRESTUnityWeb.Models.User",
+        "Type": "User",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "APIRESTUnityWeb.Models.User",
+        "Type": "User",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -86,7 +86,7 @@
       },
       {
         "Name": "user",
-        "Type": "APIRESTUnityWeb.Models.User",
+        "Type": "User",
         "IsRequired": true
       }
     ],
@@ -134,7 +134,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "APIRESTUnityWeb.Models.User",
+        "Type": "User",
         "IsRequired": true
       }
     ],

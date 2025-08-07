@@ -400,3 +400,4 @@ C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debu
 C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Pc\Documents\tesis\backend-api\APIRESTUnityWeb\APIRESTUnityWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

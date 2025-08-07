@@ -27,28 +27,33 @@ namespace APIRESTUnityWeb.Controllers
         [HttpPost("register")]
         public IActionResult Register([FromBody] User user)
         {
-            // Verificar si ya existe un usuario con el mismo email o username
-            var existingUser = _context.Users
-                .FirstOrDefault(u => u.Email == user.Email || u.UserName == user.UserName);
-
-            if (existingUser != null)
+            try
             {
-                return BadRequest(new { message = "El correo o nombre de usuario ya están registrados." });
+                var existingUser = _context.Users
+                    .FirstOrDefault(u => u.Email == user.Email || u.UserName == user.UserName);
+
+                if (existingUser != null)
+                {
+                    return BadRequest(new { message = "El correo o nombre de usuario ya están registrados." });
+                }
+
+                user.RegistrationDate = DateTime.UtcNow;
+                _context.Users.Add(user);
+                _context.SaveChanges();
+
+                // Por ahora devolvemos solo el mensaje, sin fecha
+                return Ok(new
+                {
+                    message = "Usuario registrado correctamente."
+                });
             }
-
-            // Asignar la fecha actual en UTC antes de guardar el usuario
-            user.RegistrationDate = DateTime.UtcNow;
-
-            _context.Users.Add(user);
-            _context.SaveChanges();
-
-            // Devolver mensaje y fecha convertida a hora local
-            return Ok(new
+            catch (Exception ex)
             {
-                message = "Usuario registrado correctamente.",
-                registrationDateLocal = user.RegistrationDate.ToLocalTime()
-            });
+                // Devuelve el stacktrace completo en 'detail'
+                return StatusCode(500, new { message = "Error interno del servidor.", detail = ex.ToString() });
+            }
         }
+
 
         // --------------------------------------
         // POST /auth/login
